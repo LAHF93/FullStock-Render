@@ -5,38 +5,39 @@ const port = 5500;
 const app = express();
 app.set("view engine", "ejs");
 app.use(express.static("./public"));
-// app.use(expressEjsLayouts);
+app.use(expressEjsLayouts);
+app.set("layout", "layout");
 
 app.get("/", (_req, res) => {
-  res.render("index");
+  res.render("index", { title: "FullStock" });
 });
 
 app.get("/signup", (_req, res) => {
-  res.render("signup");
+  res.render("signup", { title: "SignUp" });
 });
 
 app.get("/login", (_req, res) => {
-  res.render("login");
+  res.render("login", { title: "Login" });
 });
 
 app.get("/categories", (_req, res) => {
-  res.render("categories");
+  res.render("categories", { title: "Categories" });
 });
 
 app.get("/product", (_req, res) => {
-  res.render("product");
+  res.render("product", { title: "Product" });
 });
 
 app.get("/cart", (_req, res) => {
-  res.render("cart");
+  res.render("cart", { title: "Cart" });
 });
 
 app.get("/checkout", (_req, res) => {
-  res.render("checkout");
+  res.render("checkout", { title: "Checkout" });
 });
 
 app.get("/thanks", (_req, res) => {
-  res.render("thanks");
+  res.render("thanks", { title: "Thanks" });
 });
 
 app.listen(port, () => {
