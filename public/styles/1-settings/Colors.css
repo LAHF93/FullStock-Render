@@ -1,0 +1,84 @@
+:root {
+  /* Colores base */
+  --white: hsl(0deg 0% 100%);
+  --black: hsl(0deg 0% 0%);
+
+ /* color iris */
+  --accent-1: hsl(240deg 33% 99%);
+  --accent-2: hsl(240deg 33% 98%);
+  --accent-3: hsl(240deg 33% 97%);
+  --accent-4: hsl(240deg 33% 94%);
+  --accent-5: hsl(240deg 33% 90%);
+  --accent-6: hsl(240deg 33% 83%);
+  --accent-7: hsl(240deg 73% 80%);
+  --accent-8: hsl(240deg 73% 74%);
+  --accent-9: hsl(240deg 62% 57%);
+  --accent-10: hsl(240deg 61% 52%);
+  --accent-11: hsl(240deg 54% 51%);
+  --accent-12: hsl(240deg 55% 22%);
+
+  --accent-a1: hsl(240deg 100% 50% / 1%);
+  --accent-a2: hsl(240deg 100% 50% / 3%);
+  --accent-a3: hsl(240deg 90% 47% / 6%);
+  --accent-a4: hsl(240deg 100% 50% / 10%);
+  --accent-a5: hsl(240deg 100% 50% / 15%);
+  --accent-a6: hsl(240deg 100% 50% / 20%);
+  --accent-a7: hsl(240deg 90% 45% / 28%);
+  --accent-a8: hsl(240deg 85% 43% / 39%);
+  --accent-a9: hsl(240deg 75% 38% / 64%);
+  --accent-a10: hsl(240deg 72% 35% / 68%);
+  --accent-a11: hsl(240deg 67% 34% / 67%);
+  --accent-a12: hsl(240deg 85% 14% / 85%);
+  --accent-contrast: var(--white);
+ 
+  /* color gris */
+  --neutral-1: hsl(240deg 9% 99%);
+  --neutral-2: hsl(240deg 8% 98%);
+  --neutral-3: hsl(240deg 7% 95%);
+  --neutral-4: hsl(240deg 7% 92%);
+  --neutral-5: hsl(240deg 6% 89%);
+  --neutral-6: hsl(240deg 6% 86%);
+  --neutral-7: hsl(240deg 8% 83%);
+  --neutral-8: hsl(240deg 11% 76%);
+  --neutral-9: hsl(240deg 9% 59%);
+  --neutral-10: hsl(240deg 8% 53%);
+  --neutral-11: hsl(240deg 7% 41%);
+  --neutral-12: hsl(240deg 10% 14%);
+  
+  --neutral-a1: hsl(240deg 100% 33% / 1%);
+  --neutral-a2: hsl(240deg 100% 33% / 2%);
+  --neutral-a3: hsl(240deg 100% 20% / 6%);
+  --neutral-a4: hsl(240deg 100% 18% / 9%);
+  --neutral-a5: hsl(240deg 100% 20% / 12%);
+  --neutral-a6: hsl(240deg 100% 18% / 15%);
+  --neutral-a7: hsl(240deg 100% 18% / 20%);
+  --neutral-a8: hsl(240deg 100% 19% / 27%);
+  --neutral-a9: hsl(240deg 100% 13% / 45%);
+  --neutral-a10: hsl(240deg 100% 11% / 50%);
+  --neutral-a11: hsl(240deg 100% 8% / 62%);
+  --neutral-a12: hsl(240deg 100% 4% / 89%);
+  --neutral-contrast: var(--white);
+
+ /* Tokens de color */
+  --background: var(--white);
+  --foreground: var(--neutral-12);
+  --accent-background: var(--accent-3);
+  --accent-foreground: var(--accent-11);
+  --muted-background: var(--neutral-a2);
+  --muted-foreground: var(--neutral-11);
+  --primary-background: var(--accent-9);
+  --primary-foreground: var(--accent-contrast);
+  --secondary-background: var(--neutral-3);
+  --secondary-foreground: var(--neutral-11);
+  --border: var(--neutral-7);
+  --outline: var(--blue-9);
+  --separator: var(--gray-6);
+  --primary-background-hover: var(--accent-10);
+  --secondary-background-hover: var(--neutral-4);
+  --border-hover: var(--neutral-8);
+
+}
+
+
+
+ 
