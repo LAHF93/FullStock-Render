@@ -88,126 +88,18 @@
     <div class="frame34">
       <div class="frame29">
         <!-- Primer Polo -->
+        <% products.forEach((product) => { %>
         <div class="product">
-          <a href="product.html"
-            ><img src="/images/PoloReact.png" alt="polo react" />
+          <a href="/categories/product.html"
+            ><img src="<%=product.imageURL%>" alt="polo react" />
             <div class="frame32">
-              <h2 class="frame32-h2">Polo React</h2>
-              <p class="frame32-p">
-                Viste tu pasión por React con estilo y comodidad en cada línea
-                de código.
-              </p>
-              <p class="frame32-$">$20</p>
-            </div></a
-          >
+              <h2 class="frame32-h2"><%=product.name%></h2>
+              <p class="frame32-p"><%=product.description%></p>
+              <p class="frame32-$"><%=product.prize%></p>
+            </div>
+          </a>
         </div>
-
-        <!-- Segundo Polo -->
-        <div class="product">
-          <img src="/images/PoloJS.png" alt="polo js" />
-          <div class="frame32">
-            <h2 class="frame32-h2">Polo JavaScrypt</h2>
-            <p class="frame32-p">
-              Deja que tu amor por JavaScript hable a través de cada hilo de
-              este polo.
-            </p>
-            <p class="frame32-$">$20</p>
-          </div>
-        </div>
-
-        <!-- Tercer Polo -->
-        <div class="product">
-          <img src="/images/PoloNode.png" alt="polo Node.js" />
-          <div class="frame32">
-            <h2 class="frame32-h2">Polo Node.js</h2>
-            <p class="frame32-p">
-              Conéctate al estilo con este polo de Node.js, tan robusto como tu
-              código.
-            </p>
-            <p class="frame32-$">$20</p>
-          </div>
-        </div>
-      </div>
-      <div class="frame31">
-        <!-- Cuarto Polo -->
-        <div class="product">
-          <img src="/images/PoloTS.png" alt="polo typscrypt" />
-          <div class="frame32">
-            <h2 class="frame32-h2">Polo typscrypt</h2>
-            <p class="frame32-p">
-              Tipa tu estilo con precisión: lleva tu pasión por TypeScript en
-              cada hilo.
-            </p>
-            <p class="frame32-$">$20</p>
-          </div>
-        </div>
-
-        <!-- Quinto Polo -->
-        <div class="product">
-          <img src="/images/PoloBack.png" alt="polo backend" />
-          <div class="frame32">
-            <h2 class="frame32-h2">Polo Backend Developer</h2>
-            <p class="frame32-p">
-              Domina el servidor con estilo: viste con orgullo tu título de
-              Backend Developer.
-            </p>
-            <p class="frame32-$">$25</p>
-          </div>
-        </div>
-
-        <!-- Sexto Polo -->
-        <div class="product">
-          <img src="/images/PoloFront.png" alt="polo frontend" />
-          <div class="frame32">
-            <h2 class="frame32-h2">Polo Frontend Developer</h2>
-            <p class="frame32-p">
-              Construye experiencias con estilo: luce con orgullo tu polo de
-              Frontend Developer.
-            </p>
-            <p class="frame32-$">$25</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="frame32">
-        <!-- Septimo Polo -->
-        <div class="product">
-          <img src="/images/PoloFull.png" alt="polo fullstack" />
-          <div class="frame32">
-            <h2 class="frame32-h2">Polo Full-stack Developer</h2>
-            <p class="frame32-p">
-              Domina ambos mundos con estilo: lleva tu título de FullStack
-              Developer en cada línea de tu look.
-            </p>
-            <p class="frame32-$">$25</p>
-          </div>
-        </div>
-
-        <!-- Octavo Polo -->
-        <div class="product">
-          <img src="/images/PoloIts.png" alt="polo it's a feature" />
-          <div class="frame32">
-            <h2 class="frame32-h2">Polo It's a Feature</h2>
-            <p class="frame32-p">
-              Cuando el bug se convierte en arte: lleva con orgullo tu polo
-              'It's a feature'.
-            </p>
-            <p class="frame32-$">$15</p>
-          </div>
-        </div>
-
-        <!-- Noveno Polo -->
-        <div class="product">
-          <img src="/images/PoloWorks.png" alt="polo it works" />
-          <div class="frame32">
-            <h2 class="frame32-h2">Polo It Works On My Machine</h2>
-            <p class="frame32-p">
-              El clásico del desarrollador: presume tu confianza con 'It works
-              on my machine'.
-            </p>
-            <p class="frame32-$">$15</p>
-          </div>
-        </div>
+        <% }) %>
       </div>
     </div>
   </div>
