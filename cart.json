@@ -1,0 +1,9 @@
+[
+  {
+    "id": 10,
+    "name": "JavaScript Mug",
+    "imageURL": "/images/taza-js.png",
+    "description": "White mug featuring the JavaScript (JS) logo in yellow.",
+    "price": 13
+  }
+]

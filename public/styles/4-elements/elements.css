@@ -21,6 +21,11 @@ h6 {
   font-family: var(--family-heading);
 }
 
+a {
+  color: inherit;          
+  text-decoration: none;    
+}
+
 p {
   color: var(--secondary-foreground);
 }

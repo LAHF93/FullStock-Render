@@ -1,4 +1,6 @@
 :root {
+  /* Verificar los colores */
+  
   /* Colores base */
   --white: hsl(0deg 0% 100%);
   --black: hsl(0deg 0% 0%);

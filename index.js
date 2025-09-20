@@ -21,6 +21,27 @@ async function getProducts(categoryId) {
   return category.products;
 }
 
+async function getProduct(productId) {
+  const content = await fs.readFile("./data.json", "utf8");
+  const categories = JSON.parse(content);
+  let product;
+  for (const category of categories) {
+    if (!category.products) continue;
+    product = category.products.find((p) => p.id === productId);
+    if (product) break;
+  }
+  return product;
+}
+
+async function getCart() {
+  const cart = await fs.readFile("./cart.json", "utf8");
+  return JSON.parse(cart);
+}
+
+async function saveCart(cart) {
+  await fs.writeFile("./cart.json", JSON.stringify(cart, null, 2));
+}
+
 app.get("/", async (_req, res) => {
   const categories = await getCategories();
   res.render("home", { categories, title: "FullStock | Home" });
@@ -29,7 +50,27 @@ app.get("/", async (_req, res) => {
 app.get("/categories/:id", async (req, res) => {
   const id = +req.params.id;
   const products = await getProducts(id);
-  res.render("categories", { products, title: "Fullstock | Categories" });
+  res.render("categories", { products, title: "FullStock | Categories" });
+});
+
+app.get("/products/:id", async (req, res) => {
+  const productId = Number(req.params.id);
+  const product = await getProduct(productId);
+  if (!product) {
+    return res.status(404).render("404", { title: "Product not found" });
+  }
+  res.render("product", { product, title: `FullStock | ${product.name}` });
+});
+
+app.post("/cart/:id", async (req, res) => {
+  const productId = Number(req.params.id);
+  const product = await getProduct(productId);
+  const cart = await getCart();
+  // validar si se repite el producto en el cart
+  cart.push(product);
+  await saveCart(cart);
+  res.redirect(303, "/products");
+  // fix the redirect problem
 });
 
 /*
@@ -39,10 +80,6 @@ app.get("/signup", (_req, res) => {
 
 app.get("/login", (_req, res) => {
   res.render("login", { title: "Login" });
-});
-
-app.get("/product", (_req, res) => {
-  res.render("product", { title: "Product" });
 });
 
 app.get("/cart", (_req, res) => {
