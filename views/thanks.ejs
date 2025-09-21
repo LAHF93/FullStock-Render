@@ -1,27 +1,29 @@
 <header>
   <!-- Top navigation -->
   <nav id="top-nav">
-    <div class="container">
+    <div class="nav-container">
       <div class="actions">
-        <a href="login.html" class="login">Iniciar sesión</a>
-        <a href="signup.html" class="signup">Crear cuenta</a>
+        <a href="/login" class="login">Iniciar sesión</a>
+        <a href="/signup" class="signup">Crear cuenta</a>
       </div>
     </div>
   </nav>
 
   <!-- Main navigation -->
   <nav id="main-nav">
-    <div class="container">
+    <div class="main-container">
       <div class="content">
-        <a href="index.html"
+        <a href="/"
           ><img class="Logo" src="/images/Logo.png" alt="logo fullstock"
         /></a>
         <nav class="nav">
           <!-- Productos NAV -->
-          <a href="categories.html" class="navItem">Polos</a>
-          <h2 class="navItem">Tazas</h2>
-          <h2 class="navItem">Stickers</h2>
-          <h2 class="navItem">Compañia</h2>
+          <% categories.forEach((category) => { %>
+          <a href="/categories/<%=category.id%>" class="navItem"
+            ><%=category.name%></a
+          >
+          <% }); %>
+          <a href="#footer" class="navItem">Compañia</a>
         </nav>
 
         <!-- botones derecha -->
@@ -34,7 +36,7 @@
                 alt="button search"
               />
             </a>
-            <a href="login.html" class="Button-login">
+            <a href="/login" class="Button-login">
               <img
                 class="button login"
                 src="/images/Button-login.png"

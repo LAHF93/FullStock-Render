@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "imageURL": "/images/PoloReact.png",
+    "name": "Polo React",
+    "description": "Viste tu pasión por React con estilo y comodidad en cada línea de código.",
+    "price": 20
+  },
+  {
+    "id": 11,
+    "name": "React Mug",
+    "imageURL": "/images/taza-react.png",
+    "description": "White mug with the React logo in blue.",
+    "price": 14
+  },
+  {
+    "id": 1,
+    "categoryId": 1,
+    "imageURL": "/images/PoloReact.png",
+    "name": "Polo React",
+    "description": "Viste tu pasión por React con estilo y comodidad en cada línea de código.",
+    "price": 20
+  },
+  {
+    "id": 10,
+    "categoryId": 2,
+    "name": "JavaScript Mug",
+    "imageURL": "/images/taza-js.png",
+    "description": "White mug featuring the JavaScript (JS) logo in yellow.",
+    "price": 13
+  },
+  {
+    "id": 10,
+    "categoryId": 2,
+    "name": "JavaScript Mug",
+    "imageURL": "/images/taza-js.png",
+    "description": "White mug featuring the JavaScript (JS) logo in yellow.",
+    "price": 13
+  }
+]

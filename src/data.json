@@ -7,6 +7,7 @@
     "products": [
       {
         "id": 1,
+        "categoryId": 1,
         "imageURL": "/images/PoloReact.png",
         "name": "Polo React",
         "description": "Viste tu pasión por React con estilo y comodidad en cada línea de código.",
@@ -14,6 +15,7 @@
       },
       {
         "id": 2,
+        "categoryId": 1,
         "imageURL": "/images/PoloJS.png",
         "name": "Polo JavaScript",
         "description": "Deja que tu amor por JavaScript hable a través de cada hilo de este polo",
@@ -21,6 +23,7 @@
       },
       {
         "id": 3,
+        "categoryId": 1,
         "imageURL": "/images/PoloNode.png",
         "name": "Polo Node.js",
         "description": "Conéctate al estilo con este polo de Node.js, tan robusto como tu código.",
@@ -28,6 +31,7 @@
       },
       {
         "id": 4,
+        "categoryId": 1,
         "imageURL": "/images/PoloTS.png",
         "name": "Polo typescrypt",
         "description": "Tipa tu estilo con precisión: lleva tu pasión por TypeScript en cada hilo.",
@@ -35,6 +39,7 @@
       },
       {
         "id": 5,
+        "categoryId": 1,
         "imageURL": "/images/PoloBack.png",
         "name": "Polo Backend Developer",
         "description": "Domina el servidor con estilo: viste con orgullo tu título de Backend Developer.",
@@ -42,6 +47,7 @@
       },
       {
         "id": 6,
+        "categoryId": 1,
         "imageURL": "/images/PoloFront.png",
         "name": "Polo Frontend Developer",
         "description": "Construye experiencias con estilo: luce con orgullo tu polo de Frontend Developer.",
@@ -49,6 +55,7 @@
       },
       {
         "id": 7,
+        "categoryId": 1,
         "imageURL": "/images/PoloFull.png",
         "name": "Polo Full-stack Developer",
         "description": "Domina ambos mundos con estilo: lleva tu título de FullStack Developer en cada línea de tu look.",
@@ -56,6 +63,7 @@
       },
       {
         "id": 8,
+        "categoryId": 1,
         "imageURL": "/images/PoloIts.png",
         "name": "Polo It's a Feature",
         "description": "Cuando el bug se convierte en arte: lleva con orgullo tu polo 'It's a feature'.",
@@ -63,6 +71,7 @@
       },
       {
         "id": 9,
+        "categoryId": 1,
         "imageURL": "/images/PoloWorks.png",
         "name": "Polo It Works On My Machine",
         "description": "El clásico del desarrollador: presume tu confianza con 'It works on my machine'.",
@@ -78,6 +87,7 @@
     "products": [
       {
         "id": 10,
+        "categoryId": 2,
         "name": "JavaScript Mug",
         "imageURL": "/images/taza-js.png",
         "description": "White mug featuring the JavaScript (JS) logo in yellow.",
@@ -85,6 +95,7 @@
       },
       {
         "id": 11,
+        "categoryId": 2,
         "name": "React Mug",
         "imageURL": "/images/taza-react.png",
         "description": "White mug with the React logo in blue.",
@@ -92,6 +103,7 @@
       },
       {
         "id": 12,
+        "categoryId": 2,
         "name": "Git Fire Mug",
         "imageURL": "/images/taza-git.png",
         "description": "Black mug with 'In case of fire' joke instructions (git commit, git push, git out).",
@@ -99,6 +111,7 @@
       },
       {
         "id": 13,
+        "categoryId": 2,
         "name": "SQL Mug",
         "imageURL": "/images/taza-sql.png",
         "description": "White mug with 'I ❤️ SQL' text design.",
@@ -106,6 +119,7 @@
       },
       {
         "id": 14,
+        "categoryId": 2,
         "name": "Linux Mug",
         "imageURL": "/images/taza-linux.png",
         "description": "White mug with the Linux penguin (Tux) mascot.",
@@ -113,6 +127,7 @@
       },
       {
         "id": 15,
+        "categoryId": 2,
         "name": "GitHub Mug",
         "imageURL": "/images/taza-github.png",
         "description": "White mug with the GitHub Octocat logo in black.",
@@ -128,6 +143,7 @@
     "products": [
       {
         "id": 16,
+        "categoryId": 3,
         "name": "JavaScript Sticker",
         "imageURL": "/images/sticker-js.png",
         "description": "Sticker with the JavaScript (JS) logo in yellow.",
@@ -135,6 +151,7 @@
       },
       {
         "id": 17,
+        "categoryId": 3,
         "name": "React Sticker",
         "imageURL": "/images/sticker-react.png",
         "description": "Sticker with the React logo in blue.",
@@ -142,6 +159,7 @@
       },
       {
         "id": 18,
+        "categoryId": 3,
         "name": "Git Sticker",
         "imageURL": "/images/sticker-git.png",
         "description": "Sticker with the Git version control logo in orange.",
@@ -149,6 +167,7 @@
       },
       {
         "id": 19,
+        "categoryId": 3,
         "name": "Docker Sticker",
         "imageURL": "/images/sticker-docker.png",
         "description": "Sticker with the Docker whale logo in blue.",
@@ -156,6 +175,7 @@
       },
       {
         "id": 20,
+        "categoryId": 3,
         "name": "Linux Sticker",
         "imageURL": "/images/sticker-linux.png",
         "description": "Sticker with the Linux penguin (Tux) mascot.",
@@ -163,6 +183,7 @@
       },
       {
         "id": 21,
+        "categoryId": 3,
         "name": "VS Code Sticker",
         "imageURL": "/images/sticker-vscode.png",
         "description": "Sticker with the Visual Studio Code logo in blue.",
@@ -170,6 +191,7 @@
       },
       {
         "id": 22,
+        "categoryId": 3,
         "name": "GitHub Sticker",
         "imageURL": "/images/sticker-github.png",
         "description": "Sticker with the GitHub Octocat logo in black.",
@@ -177,6 +199,7 @@
       },
       {
         "id": 23,
+        "categoryId": 3,
         "name": "HTML5 Sticker",
         "imageURL": "/images/sticker-html.png",
         "description": "Sticker with the HTML5 logo in orange.",
@@ -184,5 +207,4 @@
       }
     ]
   }
-  
 ]

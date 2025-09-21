@@ -1,27 +1,29 @@
 <header>
   <!-- Top navigation -->
   <nav id="top-nav">
-    <div class="container">
+    <div class="nav-container">
       <div class="actions">
-        <a href="login.html" class="login">Iniciar sesión</a>
-        <a href="signup.html" class="signup">Crear cuenta</a>
+        <a href="/login" class="login">Iniciar sesión</a>
+        <a href="/signup" class="signup">Crear cuenta</a>
       </div>
     </div>
   </nav>
 
   <!-- Main navigation -->
   <nav id="main-nav">
-    <div class="container">
+    <div class="main-container">
       <div class="content">
-        <a href="index.html"
+        <a href="/"
           ><img class="Logo" src="/images/Logo.png" alt="logo fullstock"
         /></a>
         <nav class="nav">
           <!-- Productos NAV -->
-          <a href="categories.html" class="navItem">Polos</a>
-          <h2 class="navItem">Tazas</h2>
-          <h2 class="navItem">Stickers</h2>
-          <h2 class="navItem">Compañia</h2>
+          <% categories.forEach((category) => { %>
+          <a href="/categories/<%=category.id%>" class="navItem"
+            ><%=category.name%></a
+          >
+          <% }); %>
+          <a href="#footer" class="navItem">Compañia</a>
         </nav>
 
         <!-- botones derecha -->
@@ -34,7 +36,7 @@
                 alt="button search"
               />
             </a>
-            <a href="login.html" class="Button-login">
+            <a href="/login" class="Button-login">
               <img
                 class="button login"
                 src="/images/Button-login.png"
@@ -125,7 +127,7 @@
       </div>
 
       <!-- confirm order button -->
-      <a href="thanks.html">
+      <a href="/thanks">
         <button type="submit">Confirmar Orden</button>
       </a>
     </div>
@@ -134,48 +136,23 @@
       <h2 class="frame43-h2">Resumen de la orden</h2>
       <div class="frame60">
         <!-- polo react -->
+        <% cart.forEach((item) => { %>
         <div class="summaryItem">
-          <img src="/images/PoloReact.png" alt="polo react" />
+          <img src="<%=item.imageURL%>" alt="%=item.name%>" />
           <div class="frame65">
-            <h2 class="frame65-h2">Polo React</h2>
+            <h2 class="frame65-h2">%=item.name%></h2>
             <div class="frame71">
               <p class="frame71-parr">1</p>
               <p class="frame71-parr">x</p>
-              <p class="frame71-parr">$20.00</p>
+              <p class="frame71-parr"><%=item.price%></p>
             </div>
           </div>
         </div>
-
-        <!-- polo Javascript -->
-        <div class="summaryItem">
-          <img src="/images/PoloJS.png" alt="polo Javascript" />
-          <div class="frame65">
-            <h2 class="frame65-h2">Polo Javascript</h2>
-            <div class="frame71">
-              <p class="frame71-parr">1</p>
-              <p class="frame71-parr">x</p>
-              <p class="frame71-parr">$20.00</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- polo frontend developer -->
-        <div class="summaryItem">
-          <img src="/images/PoloFront.png" alt="polo frontend" />
-          <div class="frame65">
-            <h2 class="frame65-h2">Polo Frontend Developer</h2>
-            <div class="frame71">
-              <p class="frame71-parr">1</p>
-              <p class="frame71-parr">x</p>
-              <p class="frame71-parr">$25.00</p>
-            </div>
-          </div>
-        </div>
-
+        <% }) %>
         <!-- Total to pay -->
         <div class="frame67">
           <p class="frame67-parr">Total</p>
-          <p class="frame67-parr">$65.00</p>
+          <p class="frame67-parr"><%=total%></p>
         </div>
         <hr />
       </div>

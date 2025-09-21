@@ -3,8 +3,8 @@
   <nav id="top-nav">
     <div class="nav-container">
       <div class="actions">
-        <a href="login.html" class="login">Iniciar sesión</a>
-        <a href="signup.html" class="signup">Crear cuenta</a>
+        <a href="/login" class="login">Iniciar sesión</a>
+        <a href="/signup" class="signup">Crear cuenta</a>
       </div>
     </div>
   </nav>
@@ -13,15 +13,17 @@
   <nav id="main-nav">
     <div class="main-container">
       <div class="content">
-        <a href="index.html"
+        <a href="/"
           ><img class="Logo" src="/images/Logo.png" alt="logo fullstock"
         /></a>
         <nav class="nav">
           <!-- Productos NAV -->
-          <a href="categories.html" class="navItem">Polos</a>
-          <h2 class="navItem">Tazas</h2>
-          <h2 class="navItem">Stickers</h2>
-          <h2 class="navItem">Compañia</h2>
+          <% categories.forEach((category) => { %>
+          <a href="/categories/<%=category.id%>" class="navItem"
+            ><%=category.name%></a
+          >
+          <% }); %>
+          <a href="#footer" class="navItem">Compañia</a>
         </nav>
 
         <!-- botones derecha -->
@@ -34,7 +36,7 @@
                 alt="button search"
               />
             </a>
-            <a href="login.html" class="Button-login">
+            <a href="/login" class="Button-login">
               <img
                 class="button login"
                 src="/images/Button-login.png"
@@ -43,7 +45,7 @@
             </a>
           </div>
           <div class="vector1">|</div>
-          <a href="cart.html" class="button">
+          <a href="/cart" class="button">
             <img
               class="shooping-cart"
               src="/images/Button-shop.png"
@@ -58,11 +60,8 @@
 <section class="categories">
   <div class="content">
     <div class="wrapper">
-      <h2 class="wrapper-h2">Polos</h2>
-      <p class="wrapper-p">
-        Polos exclusivos con diseños que todo desarrollador querrá lucir.
-        Ideales para llevar el código a donde vayas.
-      </p>
+      <h2 class="wrapper-h2"><%=category.name%></h2>
+      <p class="wrapper-p"><%=category.description%></p>
     </div>
   </div>
 </section>
@@ -87,11 +86,11 @@
     </div>
     <div class="frame34">
       <div class="frame29">
-        <!-- Primer Polo -->
+        <!-- Productos -->
         <% products.forEach((product) => { %>
         <div class="product">
           <a href="/products/<%=product.id%>"
-            ><img src="<%=product.imageURL%>" alt="polo react" />
+            ><img src="<%=product.imageURL%>" alt="<%=product.name%>" />
             <div class="frame32">
               <h2 class="frame32-h2"><%=product.name%></h2>
               <p class="frame32-p"><%=product.description%></p>
@@ -104,7 +103,7 @@
     </div>
   </div>
 </section>
-<footer class="Footer">
+<footer id="footer" class="Footer">
   <div class="content">
     <div class="frame10">
       <div class="frame24">
