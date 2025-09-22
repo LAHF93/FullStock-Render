@@ -1,0 +1,11 @@
+Done:
+-server in express
+-header in css
+-hero in css
+-footer in css
+
+incomplete:
+-check footer details in css
+-check hero details in css
+-modify categories container in css
+-create css style for the ejs files

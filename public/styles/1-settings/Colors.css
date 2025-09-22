@@ -4,6 +4,7 @@
   /* Colores base */
   --white: hsl(0deg 0% 100%);
   --black: hsl(0deg 0% 0%);
+  --black-a7: hsl(0deg 0% 0% / 50%);
 
  /* color iris */
   --accent-1: hsl(240deg 33% 99%);
@@ -39,7 +40,7 @@
   --neutral-3: hsl(240deg 7% 95%);
   --neutral-4: hsl(240deg 7% 92%);
   --neutral-5: hsl(240deg 6% 89%);
-  --neutral-6: hsl(240deg 6% 86%);
+  --neutral-6: hsl(240deg 7% 87%);
   --neutral-7: hsl(240deg 8% 83%);
   --neutral-8: hsl(240deg 11% 76%);
   --neutral-9: hsl(240deg 9% 59%);

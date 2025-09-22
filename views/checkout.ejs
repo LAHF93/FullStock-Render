@@ -12,10 +12,12 @@
   <!-- Main navigation -->
   <nav id="main-nav">
     <div class="main-container">
-      <div class="content">
+      <div class="main-content">
+        <!-- logo fullstock -->
         <a href="/"
           ><img class="Logo" src="/images/Logo.png" alt="logo fullstock"
         /></a>
+        <!-- botones de navegacion -->
         <nav class="nav">
           <!-- Productos NAV -->
           <% categories.forEach((category) => { %>
@@ -27,7 +29,7 @@
         </nav>
 
         <!-- botones derecha -->
-        <h2 id="frame9">
+        <div class="frame9">
           <div class="frame8">
             <a class="Button-Search">
               <img
@@ -45,14 +47,14 @@
             </a>
           </div>
           <div class="vector1">|</div>
-          <a href="cart.html" class="button">
+          <a href="/cart" class="button">
             <img
               class="shooping-cart"
               src="/images/Button-shop.png"
               alt="boton de carrito de compras"
             />
           </a>
-        </h2>
+        </div>
       </div>
     </div>
   </nav>
@@ -159,8 +161,8 @@
     </div>
   </div>
 </section>
-<footer class="Footer">
-  <div class="content">
+<footer id="footer" class="Footer">
+  <div class="footer-content">
     <div class="frame10">
       <div class="frame24">
         <!-- Tienda -->
@@ -206,9 +208,9 @@
         </form>
       </div>
     </div>
-    <br />
-    <hr />
-    <br />
-    <p class="copyright">Todos los derechos reservados © Full Stock</p>
+
+    <div class="copyright">
+      <p class="p-copyright">Todos los derechos reservados © Full Stock</p>
+    </div>
   </div>
 </footer>
