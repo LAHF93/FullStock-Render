@@ -5,7 +5,6 @@ Done:
 -footer in css
 
 incomplete:
--check footer details in css
--check hero details in css
+-check fonts in all the pages in css
 -modify categories container in css
 -create css style for the ejs files

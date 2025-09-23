@@ -9,7 +9,7 @@
     width: 1280px;
     max-width: var(--width-7xl);
     height: 348px;
-    padding: 0 auto;
+    margin: 0 auto;
 }
 
 .frame10 {
@@ -41,12 +41,69 @@
     height: 152px;
 }
 
-.frame21{
+.frame20 {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    max-width: var(--width-md);
-    height: 132px;
+    max-width: 234.67px;
+    height: 108px;
+    gap: var(--space-6);
 }
 
+.frame20 h2 {
+    color: var(--muted-foreground);
+}
+
+.frame16 h2, .frame17 h2 {
+    color: var(--foreground);
+}
+
+.fram21 h2 {
+    color: var(--foreground);
+}
+
+.tienda, .compania, .conecta, .suscribete {
+    margin-bottom: var(--space-6);
+}
+
+.frame21{
+    width: 448px;
+    max-width: var(--width-md);
+    height: 152px;/* height es de 132 pero se descuadra de los frames 16 y 17. Trate de ponerlos a la misma linea pero no pude */
+}
+
+.frame23 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 448px;
+    height: 40px;
+    gap: var(--space-2);
+    margin-top: 5px;
+}
+
+
+.frame23 input {
+    border-radius: var(--rounded-xl);
+    border: 1px solid var(--border);
+    flex: 1;              
+}
+.frame23 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+    height: var(--space-10);
+    border-radius: var(--rounded-xl);
+    border: 1px solid var(--border);
+    /* uso solo horizontal para que el align items haga vertical */
+    padding-right: var(--space-3_5);/* Figma often gives you explicit paddings (padding-top, padding-bottom, etc.), but in real CSS the font’s line-height + padding interact, so the text can look “off-center.” */
+    padding-left: var(--space-3_5);
+    gap: var(--space-2);
+    background-color: var(--secondary-background);
+    flex-shrink: 0;       
+}
 
 .copyright {
     display: flex;
@@ -66,5 +123,5 @@
     justify-content: center;
     width: 1216px;
     height: 20px;
-
+    color: var(--muted-foreground);
 }
