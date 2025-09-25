@@ -59,25 +59,22 @@
     </div>
   </nav>
 </header>
-<section class="categories">
-  <div class="content">
+<section class="product">
+  <div class="product-content">
     <div class="frame42">
       <img src="<%=product.imageURL%>" alt="<%=product.name%>" />
     </div>
     <div class="frame43">
-      <h2 class="PoloReact"><%= product.name %></h2>
-      <p class="price"><%= product.price %></p>
-      <p class="PoloReact-parr"><%= product.description %></p>
+      <h2 class="product-name"><%= product.name %></h2>
+      <p class="price">$<%= product.price %></p>
+      <p class="product-p"><%= product.description %></p>
       <form action="/cart/<%= product.id%>" method="post">
-        <button class="agregarCarrito">Agregar al Carrito</button>
+        <button class="ad-cart">Agregar al Carrito</button>
       </form>
-
-      <br />
-      <br />
-      <hr />
-      <br />
-      <p>Caracteristicas</p>
-      <ul>
+      <hr class="separator" />
+      <!-- caracteristicas -->
+      <p class="characteristics-p">Caracteristicas</p>
+      <ul class="characteristics-list">
         <li>
           Estampado resistente que mantiene sus colores vibrantes lavado tras
           lavado.
@@ -130,7 +127,12 @@
         <p class="ultimas-ofertas">
           Recibe las últimas ofertas y descuentos en tu correo semanalmente.
         </p>
-        <form class="frame23" action="subscribirse" method="post">
+        <form
+          class="frame23"
+          action="subscribirse"
+          method="post"
+          onsubmit="event.preventDefault()"
+        >
           <input class="input email" type="email" name="email" />
           <button class="subscribirse butt" type="submit">Subscribirse</button>
         </form>

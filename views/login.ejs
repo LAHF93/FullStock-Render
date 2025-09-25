@@ -60,36 +60,41 @@
   </nav>
 </header>
 <section class="login-section">
-  <div class="content">
+  <div class="login-content">
     <div class="frame72">
       <h2 class="login-h2">Inicia sesión en tu cuenta</h2>
 
       <!-- Form to login  -->
-      <form action="" method="post" class="login-email">
-        <label for="login-email">Correo electrónico</label>
-        <input
-          type="email"
-          id="login-email"
-          name="email"
-          class="input-email"
-          required
-        />
+      <form action="" method="post">
+        <div class="email-form">
+          <label for="login-email">Correo electrónico</label>
+          <input
+            type="email"
+            id="login-email"
+            name="email"
+            class="input-email"
+            required
+          />
+        </div>
 
-        <label for="login-password">Contraseña</label>
-        <input
-          type="password"
-          id="login-password"
-          name="password"
-          class="input-password"
-          required
-        />
+        <div class="password-form">
+          <label for="login-password">Contraseña</label>
+          <input
+            type="password"
+            id="login-password"
+            name="password"
+            class="input-password"
+            required
+          />
+        </div>
+
+        <!-- Button to log in -->
+        <button class="login-button" type="submit">Iniciar sesión</button>
       </form>
 
-      <!-- Button to log in -->
-      <button class="login-button">Iniciar sesión</button>
       <div class="frame73">
-        <p class="login-nocount">¿Aún no tienes cuenta?</p>
-        <a href="/signup"><p class="login-creatcount">Crea una cuenta</p></a>
+        <p class="login-noacount">¿Aún no tienes cuenta?</p>
+        <a href="/signup"><p class="login-creatacount">Crea una cuenta</p></a>
       </div>
     </div>
   </div>
@@ -135,7 +140,12 @@
         <p class="ultimas-ofertas">
           Recibe las últimas ofertas y descuentos en tu correo semanalmente.
         </p>
-        <form class="frame23" action="subscribirse" method="post">
+        <form
+          class="frame23"
+          action="subscribirse"
+          method="post"
+          onsubmit="event.preventDefault()"
+        >
           <input class="input email" type="email" name="email" />
           <button class="subscribirse butt" type="submit">Subscribirse</button>
         </form>

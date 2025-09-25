@@ -194,7 +194,12 @@
         <p class="ultimas-ofertas">
           Recibe las últimas ofertas y descuentos en tu correo semanalmente.
         </p>
-        <form class="frame23" action="subscribirse" method="post">
+        <form
+          class="frame23"
+          action="subscribirse"
+          method="post"
+          onsubmit="event.preventDefault()"
+        >
           <input class="input email" type="email" name="email" />
           <button class="subscribirse-butt" type="submit">Subscribirse</button>
         </form>

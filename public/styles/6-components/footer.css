@@ -54,16 +54,14 @@
     color: var(--muted-foreground);
 }
 
-.frame16 h2, .frame17 h2 {
-    color: var(--foreground);
-}
 
-.fram21 h2 {
+.suscribete {
     color: var(--foreground);
 }
 
 .tienda, .compania, .conecta, .suscribete {
     margin-bottom: var(--space-6);
+    color: var(--foreground)
 }
 
 .frame21{
@@ -102,7 +100,8 @@
     padding-left: var(--space-3_5);
     gap: var(--space-2);
     background-color: var(--secondary-background);
-    flex-shrink: 0;       
+    flex-shrink: 0; 
+    cursor: pointer;      
 }
 
 .copyright {

@@ -6,5 +6,4 @@ Done:
 
 incomplete:
 -check fonts in all the pages in css
--modify categories container in css
 -create css style for the ejs files

@@ -1,0 +1,100 @@
+.login-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+    height: 530px;
+    border: 1px solid var(--neutral-6);
+}
+
+.login-content { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: var(--width-7xl);
+}
+
+.frame72 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 348px;
+    max-width: var(--width-sm);
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 384px;
+    height: 62px;
+    gap: var(--space-2);
+    margin-bottom: var(--space-6);
+}
+
+.password-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 384px;
+    height: 62px;
+    gap: var(--space-2);
+    margin-bottom: var(--space-6);
+}
+
+.input-password, .input-email {
+    width: 384px;
+    height: var(--space-10);
+    border-radius: var(--rounded-xl);
+    border: 1px solid var(--border);
+    flex: 1;
+}
+
+.login-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 384px;
+    height: 32px;
+    font-weight: var(--font-bold);
+    font-size: var(--font-size-6);
+    line-height: var(--leading-8);
+    color: var(--black);
+    margin-bottom: var(--space-10);
+}
+
+.login-button {
+    display: inline-flex;          
+    justify-content: center;       
+    align-items: center; 
+    width: 384px;
+    height: var(--space-10);
+    border-radius: var(--rounded-xl);
+    border: 0;
+    padding: var(--space-2_5) var(--space-3_5);
+    gap: var(--space-2);
+    background-color: var(--primary-background);
+    color: var(--white);
+    margin-bottom: var(--space-10);
+    cursor: pointer;
+}
+
+.frame73 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 384px;
+    height: 24px;
+    gap: var(--space-4);
+}
+
+.login-creatacount {
+    color: var(--accent-foreground);
+}

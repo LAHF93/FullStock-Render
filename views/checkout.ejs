@@ -146,7 +146,7 @@
             <div class="frame71">
               <p class="frame71-parr">1</p>
               <p class="frame71-parr">x</p>
-              <p class="frame71-parr"><%=item.price%></p>
+              <p class="frame71-parr">$<%=item.price%></p>
             </div>
           </div>
         </div>
@@ -154,7 +154,7 @@
         <!-- Total to pay -->
         <div class="frame67">
           <p class="frame67-parr">Total</p>
-          <p class="frame67-parr"><%=total%></p>
+          <p class="frame67-parr">$<%=total%></p>
         </div>
         <hr />
       </div>
@@ -202,7 +202,12 @@
         <p class="ultimas-ofertas">
           Recibe las últimas ofertas y descuentos en tu correo semanalmente.
         </p>
-        <form class="frame23" action="subscribirse" method="post">
+        <form
+          class="frame23"
+          action="subscribirse"
+          method="post"
+          onsubmit="event.preventDefault()"
+        >
           <input class="input email" type="email" name="email" />
           <button class="subscribirse butt" type="submit">Subscribirse</button>
         </form>

@@ -60,14 +60,14 @@
   </nav>
 </header>
 <section class="container-order">
-  <div class="content">
-    <p class="container-order-parr">¡Muchas gracias por tu compra!</p>
-    <h2 class="container-order-h2">Tu orden está en camino</h2>
-    <p class="container-order-parr">
+  <div class="content-order">
+    <p class="content-p1">¡Muchas gracias por tu compra!</p>
+    <h2 class="content-h2">Tu orden está en camino</h2>
+    <p class="content-p2">
       Llegaremos a la puerta de tu domicilio lo antes posible
     </p>
-    <p class="container-order-parr">Código de seguimiento</p>
-    <p class="container-order-parr">51547878755545848512</p>
+    <p class="content-p3">Código de seguimiento</p>
+    <p class="content-p4">51547878755545848512</p>
   </div>
 </section>
 <footer id="footer" class="Footer">
@@ -111,7 +111,12 @@
         <p class="ultimas-ofertas">
           Recibe las últimas ofertas y descuentos en tu correo semanalmente.
         </p>
-        <form class="frame23" action="subscribirse" method="post">
+        <form
+          class="frame23"
+          action="subscribirse"
+          method="post"
+          onsubmit="event.preventDefault()"
+        >
           <input class="input email" type="email" name="email" />
           <button class="subscribirse butt" type="submit">Subscribirse</button>
         </form>

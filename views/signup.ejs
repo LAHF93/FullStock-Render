@@ -59,47 +59,54 @@
     </div>
   </nav>
 </header>
-<section class="singup">
-  <div class="content">
+<section class="signup-container">
+  <div class="signup-content">
     <!-- Content create an acount -->
     <div class="frame72">
       <h2 class="singup-h2">Crea una cuenta</h2>
 
       <!-- Form to singup  -->
-      <form action="" method="post" class="login-email">
-        <label for="login-email">Correo electrónico</label>
-        <input
-          type="email"
-          id="login-email"
-          name="email"
-          class="input-email"
-          required
-        />
+      <form action="" method="post">
+        <div class="email-form">
+          <label for="signup-email">Correo electrónico</label>
+          <input
+            type="email"
+            id="signup-email"
+            name="email"
+            class="input-email"
+            required
+          />
+        </div>
 
-        <label for="login-password">Contraseña</label>
-        <input
-          type="password"
-          id="login-password"
-          name="password"
-          class="input-password"
-          required
-        />
+        <div class="password-form">
+          <label for="signup-password">Contraseña</label>
+          <input
+            type="password"
+            id="signup-password"
+            name="password"
+            class="input-password"
+            required
+          />
+        </div>
 
-        <label for="login-confirmPassword">Confirma tu contraseña</label>
-        <input
-          type="password"
-          id="login-confirmPassword"
-          name="confirmPassword"
-          class="input-confirmPassword"
-          required
-        />
+        <div class="passwordConfirm-form">
+          <label for="signup-confirmPassword">Confirma tu contraseña</label>
+          <input
+            type="password"
+            id="signup-confirmPassword"
+            name="confirmPassword"
+            class="input-confirmPassword"
+            required
+          />
+        </div>
+
+        <!-- Button to singup -->
+        <button class="login-button">Crea cuenta</button>
       </form>
 
-      <!-- Button to singup -->
-      <button class="login-button">Crea cuenta</button>
       <div class="frame73">
         <p class="login-nocount">¿Ya tienes cuenta?</p>
-        <a href="/login"><p class="login-creatcount">Iniciar sesión</p></a>
+        <a href="/login"><p class="login-signup">Iniciar sesión</p></a>
       </div>
     </div>
   </div>
@@ -145,7 +152,12 @@
         <p class="ultimas-ofertas">
           Recibe las últimas ofertas y descuentos en tu correo semanalmente.
         </p>
-        <form class="frame23" action="subscribirse" method="post">
+        <form
+          class="frame23"
+          action="subscribirse"
+          method="post"
+          onsubmit="event.preventDefault()"
+        >
           <input class="input email" type="email" name="email" />
           <button class="subscribirse butt" type="submit">Subscribirse</button>
         </form>

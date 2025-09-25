@@ -77,7 +77,7 @@
               </button>
             </div>
             <div class="frame66">
-              <h2 class="frame66-h2"><%=item.price%></h2>
+              <h2 class="frame66-h2">$<%=item.price%></h2>
               <div class="frame69">
                 <button>
                   <img src="/images/menos.png" alt="signo de menos" />
@@ -97,7 +97,7 @@
         <!-- Total to pay -->
         <div class="frame67">
           <p class="frame67-parr">Total</p>
-          <p class="frame67-parr"><%=total%></p>
+          <p class="frame67-parr">$<%=total%></p>
         </div>
         <br />
         <hr />
@@ -150,7 +150,12 @@
         <p class="ultimas-ofertas">
           Recibe las últimas ofertas y descuentos en tu correo semanalmente.
         </p>
-        <form class="frame23" action="subscribirse" method="post">
+        <form
+          class="frame23"
+          action="subscribirse"
+          method="post"
+          onsubmit="event.preventDefault()"
+        >
           <input class="input email" type="email" name="email" />
           <button class="subscribirse butt" type="submit">Subscribirse</button>
         </form>

@@ -59,19 +59,19 @@
     </div>
   </nav>
 </header>
-<section class="categories">
-  <div class="content">
+<section class="categories1">
+  <div class="categories1-content">
     <div class="wrapper">
       <h2 class="wrapper-h2"><%=category.name%></h2>
       <p class="wrapper-p"><%=category.description%></p>
     </div>
   </div>
 </section>
-<section class="categories">
-  <div class="content">
+<section class="categories2">
+  <div class="categories2-content">
     <div class="frame28">
       <div class="frame39">
-        <h2 class="precio">Precio</h2>
+        <h2 class="price">Precio</h2>
         <div class="frame71">
           <div class="input-group">
             <label for="min">Min</label>
@@ -90,13 +90,13 @@
       <div class="frame29">
         <!-- Productos -->
         <% products.forEach((product) => { %>
-        <div class="product">
+        <div class="product-card">
           <a href="/products/<%=product.id%>"
             ><img src="<%=product.imageURL%>" alt="<%=product.name%>" />
             <div class="frame32">
               <h2 class="frame32-h2"><%=product.name%></h2>
               <p class="frame32-p"><%=product.description%></p>
-              <p class="frame32-$"><%=product.prize%></p>
+              <p class="frame32-d">$<%=product.price%></p>
             </div>
           </a>
         </div>
@@ -146,7 +146,12 @@
         <p class="ultimas-ofertas">
           Recibe las últimas ofertas y descuentos en tu correo semanalmente.
         </p>
-        <form class="frame23" action="subscribirse" method="post">
+        <form
+          class="frame23"
+          action="subscribirse"
+          method="post"
+          onsubmit="event.preventDefault()"
+        >
           <input class="input email" type="email" name="email" />
           <button class="subscribirse butt" type="submit">Subscribirse</button>
         </form>

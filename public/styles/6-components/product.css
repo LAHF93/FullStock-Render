@@ -1,0 +1,114 @@
+.product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    height: 728px;
+    border: 1px solid var(--neutral-6);
+}
+
+.product-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    width: 100%;
+    max-width: var(--width-7xl);
+    height: 600px;
+    gap: var(--space-8);
+}
+
+.frame42 {
+    width: 600px;
+    height: 600px;
+    gap: var(--space-6);
+}
+
+.frame42 img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    background-color: var(--muted-background);
+    border-radius: var(--rounded-xl);
+}
+
+.frame43 {
+    width: 100%;
+    max-width: 584px;
+    height: 405px;
+}
+
+.product-name {
+    width: 584px;
+    height: 36px;
+    font-weight: var(--font-bold);
+    font-size: var(--font-size-7-5);
+    line-height: var(--leading-9);
+    color: var(--foreground);
+    margin-bottom: var(--space-3);
+}
+
+.price {
+    width: 584px;
+    height: 36px;
+    font-weight: var(--font-normal);
+    font-size: var(--font-size-7-5);
+    line-height: var(--leading-9);
+    color: var(--foreground);
+    margin-bottom: var(--space-6);
+}
+
+.product-p {
+    width: 584px;
+    height: 20px;
+    font-weight: var(--font-normal);
+    font-size: var(--font-size-3-5);
+    line-height: var(--leading-5);
+    color: var(--muted-foreground);
+    margin-bottom: var(--space-10);
+}
+
+.ad-cart { 
+    display: inline-flex;          
+    justify-content: center;       
+    align-items: center; 
+    width: 320px;
+    max-width: var(--width-xs);     
+    height: var(--space-12);                 
+    padding: var(--space-3) var(--space-8);
+    border-radius: var(--rounded-xl);
+    border-color: var(--primary-background);
+    gap: var(--space-2);
+    color: var(--white);
+    background-color: var(--primary-background); 
+    margin-bottom: var(--space-6);
+    cursor: pointer;
+}
+
+.separator {
+    width: 584px;
+    border-bottom: 1px solid var(--separator);
+    margin-bottom: var(--space-6);
+}
+
+.characteristics-p {
+    width: 584px;
+    height: 20px;
+    font-weight: var(--font-semibold);
+    font-size: var(--font-size-3-5);
+    line-height: var(--leading-5);
+    color: var(--accent-foreground);
+    margin-bottom: var(--space-6);
+}
+
+.characteristics-list {
+    list-style-position: inside;
+    width: 584px;
+    height: 96px;
+    font-weight: var(--font-normal);
+    font-size: var(--font-size-3-5);
+    line-height: var(--leading-6);
+    color: var(--muted-foreground);
+}
