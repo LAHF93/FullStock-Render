@@ -60,7 +60,7 @@
   </nav>
 </header>
 <section class="Checkout">
-  <div class="content">
+  <div class="checkout-content">
     <!-- contact information -->
     <div class="frame42">
       <h2 class="frame42-h2">Información de contacto</h2>
@@ -74,89 +74,106 @@
           required
         />
       </form>
-      <br />
-      <hr />
-      <br />
+      <hr class="frame42-separator" />
       <!-- shipment information -->
       <h2 class="frame56-h2">Información de envío</h2>
       <div class="frame56">
         <form action="" method="post" class="shipmentInfo">
           <!-- Name and last name -->
           <div class="frame54">
-            <label for="Name">Nombre</label>
-            <input type="text" id="Name" name="Name" required />
+            <div class="input-group">
+              <label for="Name">Nombre</label>
+              <input type="text" id="Name" name="Name" required />
+            </div>
 
-            <label for="lastName">Apellido</label>
-            <input type="text" id="lastName" name="lastName" required />
+            <div class="input-group">
+              <label for="lastName">Apellido</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
           </div>
 
           <!-- company -->
-          <label for="company">compañia</label>
-          <input type="text" id="company" name="company" />
-
-          <!-- direction -->
-          <label for="address">Dirección</label>
-          <input type="text" id="address" name="address" required />
-
-          <!-- Ciudad y Pais -->
-          <div class="frame57">
-            <label for="city">Ciudad</label>
-            <input type="text" id="city" name="city" required />
-
-            <label for="country">País</label>
-            <input type="text" id="country" name="country" required />
+          <div class="inputC-group">
+            <label for="company">Compañía</label>
+            <input type="text" id="company" name="company" />
           </div>
 
-          <!-- Provincia/estado y Código postal -->
-          <div class="frame57">
-            <label for="state">Provincia/Estado</label>
-            <input type="text" id="state" name="state" required />
+          <!-- dirección -->
+          <div class="inputD-group">
+            <label for="address">Dirección</label>
+            <input type="text" id="address" name="address" required />
+          </div>
 
-            <label for="postalCode">Código postal</label>
-            <input type="number" id="postalCode" name="postalCode" required />
+          <!-- Ciudad y País -->
+          <div class="frame57">
+            <div class="input57-group">
+              <label for="city">Ciudad</label>
+              <input type="text" id="city" name="city" required />
+            </div>
+
+            <div class="input57-group">
+              <label for="country">País</label>
+              <input type="text" id="country" name="country" required />
+            </div>
+          </div>
+
+          <!-- Provincia/Estado y Código postal -->
+          <div class="frame57">
+            <div class="input57-group">
+              <label for="state">Provincia/Estado</label>
+              <input type="text" id="state" name="state" required />
+            </div>
+
+            <div class="input57-group">
+              <label for="postalCode">Código postal</label>
+              <input type="number" id="postalCode" name="postalCode" required />
+            </div>
           </div>
 
           <!-- phone -->
-          <label for="phone" class="phone">Teléfono</label>
-          <input
-            type="phone"
-            id="phone"
-            name="phone"
-            class="phone-input"
-            required
-          />
+          <div class="inputP-group">
+            <label for="phone" class="phone">Teléfono</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="phone-input"
+              required
+            />
+          </div>
         </form>
       </div>
 
       <!-- confirm order button -->
       <a href="/thanks">
-        <button type="submit">Confirmar Orden</button>
+        <button type="submit" class="confirm-button">Confirmar Orden</button>
       </a>
     </div>
     <!-- purchase order -->
     <div class="frame43">
       <h2 class="frame43-h2">Resumen de la orden</h2>
-      <div class="frame60">
+      <div class="fram60">
         <!-- polo react -->
-        <% cart.forEach((item) => { %>
-        <div class="summaryItem">
-          <img src="<%=item.imageURL%>" alt="%=item.name%>" />
-          <div class="frame65">
-            <h2 class="frame65-h2">%=item.name%></h2>
-            <div class="frame71">
-              <p class="frame71-parr">1</p>
-              <p class="frame71-parr">x</p>
-              <p class="frame71-parr">$<%=item.price%></p>
+        <div class="cart-item-list">
+          <% cart.forEach((item) => { %>
+          <div class="summaryItem">
+            <img src="<%=item.imageURL%>" alt="%=item.name%>" />
+            <div class="fram65">
+              <h2 class="fram65-h2"><%=item.name%></h2>
+              <div class="frame71">
+                <p class="frame71-p1">1</p>
+                <p class="frame71-px">x</p>
+                <p class="frame71-pip">$<%=item.price%>.00</p>
+              </div>
             </div>
           </div>
+          <% }) %>
         </div>
-        <% }) %>
         <!-- Total to pay -->
         <div class="frame67">
-          <p class="frame67-parr">Total</p>
-          <p class="frame67-parr">$<%=total%></p>
+          <p class="frame67-p1">Total</p>
+          <p class="frame67-p2">$<%=total%>.00</p>
         </div>
-        <hr />
       </div>
     </div>
   </div>

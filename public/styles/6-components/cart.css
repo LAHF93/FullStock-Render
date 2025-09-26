@@ -1,0 +1,200 @@
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    height: 888px;
+    border: 1px solid var(--neutral-6)
+}
+
+.cart-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: var(--width-7xl);
+    height: 888px;
+    padding: 64px 32px;
+}
+
+.frame70 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: var(--width-xl);
+    height: 760px;
+}
+
+.cart-h2 {
+    text-align: center;
+    width: 576px;
+    height: 36px;
+    font-weight: var(--font-bold);
+    font-size: var(--font-size-7-5);
+    line-height: var(--leading-9);
+    color: var(--foreground);
+    margin-bottom: var(--space-12);
+}
+
+.frame60 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 576px;
+    height: 676px;
+    border-radius: var(--rounded-xl);
+    border: 1px solid var(--neutral-6);
+}
+
+.cartItem {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 576px;
+    height: 168px;
+    padding: var(--space-6);
+    gap: var(--space-6);
+    border-bottom:1px solid var(--neutral-6);
+}
+
+.cartItem-img {
+    width: var(--space-20);
+    height: 120px;
+    border-radius: var(--rounded-xl);
+    background-color: var(--muted-background);
+}
+
+.cart-item-list { /*esto me lo recomendo chatgpt para que si hay varios productos en el cart se pueda hacer scroll y no se salga del box*/
+  flex: 1;                   
+  overflow-y: auto;           
+}
+
+.frame63 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 424px;
+    height: 120px;
+}
+
+.frame65 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--space-4);
+}
+
+.frame66 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.frame69 {
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    height: 32px;
+    gap: var(--space-4);
+}
+
+.frame65-h2 {
+    width: 380px;
+    height: 20px;
+    font-weight: var(--font-normal);
+    font-size: var(--font-size-3-5);
+    line-height: var(--leading-5);
+    color: var(--foreground);
+}
+
+.frame66-h2 {
+    width: 48px;
+    height: 20px;
+    font-weight: var(--font-medium);
+    font-size: var(--font-size-3-5);
+    line-height: var(--leading-5);
+    color: var(--foreground);
+}
+
+.fram65 img {
+    width: var(--space-7);
+    height: var(--space-7);
+    border-radius: var(--rounded-md);
+    padding: var(--space-1);
+    background-color: var(--white);
+}
+
+.delete-button,
+.frame69 button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.frame51 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--space-8);
+    height: var(--space-8);
+    border-radius: var(--rounded-md);
+    border: 1px solid var(--neutral-6);
+    padding: var(--space-2) var(--space-4);
+}
+
+.frame67 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 576px;
+    height: 72px;
+    padding: var(--space-6);
+    border-bottom: 1px solid var(--neutral-6);
+}
+
+.frame67-p1 {
+    width: 473px;
+    height: 24px;
+    font-weight: var(--font-medium);
+    font-size: var(--font-size-4);
+    line-height: var(--leading-6);
+    color: var(--foreground);
+}
+
+.frame67-p2 {
+    width: 55px;
+    height: 24px;
+    font-weight: var(--font-medium);
+    font-size: var(--font-size-4);
+    line-height: var(--leading-6);
+    color: var(--foreground);
+}
+
+.frame68 {
+    width: 100%;
+    max-width: 576px;
+    height: 96px;
+    padding: var(--space-6);
+}
+
+.frame68-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 528px;
+    height: 48px; /*chatgpt me recomendo que use fixed heigth en lugar de var()*/
+    border-radius: var(--rounded-xl);
+    padding: var(--space-3) var(--space-8);
+    gap: var(--space-2);
+    background-color: var(--primary-background);
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+}

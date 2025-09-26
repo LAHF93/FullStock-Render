@@ -36,5 +36,13 @@
     "imageURL": "/images/taza-js.png",
     "description": "White mug featuring the JavaScript (JS) logo in yellow.",
     "price": 13
+  },
+  {
+    "id": 16,
+    "categoryId": 3,
+    "name": "JavaScript Sticker",
+    "imageURL": "/images/sticker-js.png",
+    "description": "Sticker with the JavaScript (JS) logo in yellow.",
+    "price": 5
   }
 ]
