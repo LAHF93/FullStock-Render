@@ -66,6 +66,9 @@
       <h2 class="cart-h2">Carrito de compras</h2>
       <div class="frame60">
         <!-- Products -->
+        <% if (cart.length === 0) { %>
+        <p class="empty-cart"><%= emptyMessage %></p>
+        <% } else { %>
         <div class="cart-item-list">
           <% cart.forEach((item) => { %>
           <div class="cartItem">
@@ -77,9 +80,11 @@
             <div class="frame63">
               <div class="frame65">
                 <h2 class="frame65-h2"><%=item.name%></h2>
-                <button class="delete-button">
-                  <img src="/images/borrar.png" alt="boton de borrar" />
-                </button>
+                <form action="/cart/<%= item.id %>/delete" method="post">
+                  <button class="delete-button">
+                    <img src="/images/borrar.png" alt="boton de borrar" />
+                  </button>
+                </form>
               </div>
               <div class="frame66">
                 <h2 class="frame66-h2">$<%=item.price%>.00</h2>
@@ -106,10 +111,11 @@
 
         <!-- Checkout button -->
         <div class="frame68">
-          <a href="/cart/checkout"
-            ><button class="frame68-button">Continuar Compra</button></a
-          >
+          <a href="/cart/checkout">
+            <button class="frame68-button">Continuar Compra</button>
+          </a>
         </div>
+        <% } %>
       </div>
     </div>
   </div>

@@ -1,20 +1,6 @@
 [
   {
     "id": 1,
-    "imageURL": "/images/PoloReact.png",
-    "name": "Polo React",
-    "description": "Viste tu pasión por React con estilo y comodidad en cada línea de código.",
-    "price": 20
-  },
-  {
-    "id": 11,
-    "name": "React Mug",
-    "imageURL": "/images/taza-react.png",
-    "description": "White mug with the React logo in blue.",
-    "price": 14
-  },
-  {
-    "id": 1,
     "categoryId": 1,
     "imageURL": "/images/PoloReact.png",
     "name": "Polo React",
@@ -30,19 +16,27 @@
     "price": 13
   },
   {
-    "id": 10,
-    "categoryId": 2,
-    "name": "JavaScript Mug",
-    "imageURL": "/images/taza-js.png",
-    "description": "White mug featuring the JavaScript (JS) logo in yellow.",
-    "price": 13
+    "id": 17,
+    "categoryId": 3,
+    "name": "React Sticker",
+    "imageURL": "/images/sticker-react.png",
+    "description": "Sticker with the React logo in blue.",
+    "price": 5
   },
   {
-    "id": 16,
+    "id": 20,
     "categoryId": 3,
-    "name": "JavaScript Sticker",
-    "imageURL": "/images/sticker-js.png",
-    "description": "Sticker with the JavaScript (JS) logo in yellow.",
-    "price": 5
+    "name": "Linux Sticker",
+    "imageURL": "/images/sticker-linux.png",
+    "description": "Sticker with the Linux penguin (Tux) mascot.",
+    "price": 4
+  },
+  {
+    "id": 7,
+    "categoryId": 1,
+    "imageURL": "/images/PoloFull.png",
+    "name": "Polo Full-stack Developer",
+    "description": "Domina mundos con estilo: lleva título de FullStack Developer en cada línea de tu look.",
+    "price": 25
   }
 ]

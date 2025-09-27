@@ -86,18 +86,32 @@ app.post("/cart/:id", async (req, res) => {
   const productId = Number(req.params.id);
   const product = await getProduct(productId);
   const cart = await getCart();
-  // validar si se repite el producto en el cart
   cart.push(product);
   await saveCart(cart);
   res.redirect(303, `/categories/${product.categoryId}`);
-  // fix the redirect problem
+});
+
+app.post("/cart/:id/delete", async (req, res) => {
+  const productId = Number(req.params.id);
+  const cart = await getCart();
+  const updatedCart = cart.filter((p) => p.id !== productId);
+  await saveCart(updatedCart);
+  res.redirect(303, "/cart");
 });
 
 app.get("/cart", async (_req, res) => {
   const cart = await getCart();
   const categories = await getCategories();
   const total = cart.reduce((sum, item) => sum + item.price, 0);
-  res.render("cart", { cart, categories, total, title: "Fullstock | Cart" });
+  const emptyMessage =
+    "No tienes productos por el momento. Anda a la sección de nuestros productos y empieza añadir los productos que más te gusten.";
+  res.render("cart", {
+    cart,
+    categories,
+    total,
+    emptyMessage,
+    title: "Fullstock | Cart",
+  });
 });
 
 app.get("/signup", async (_req, res) => {

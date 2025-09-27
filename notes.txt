@@ -1,9 +1,0 @@
-Done:
--server in express
--header in css
--hero in css
--footer in css
-
-incomplete:
--check fonts in all the pages in css
--create css style for the ejs files
