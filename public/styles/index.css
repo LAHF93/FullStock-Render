@@ -1,15 +1,15 @@
 /* 1. Settings */
 
-@import url(1-settings/Border-radius.css);
-@import url(1-settings/Breakpoints.css);
+@import url(1-settings/border-radius.css);
+@import url(1-settings/breakpoints.css);
 @import url(1-settings/colors.css);
-@import url(1-settings/Font-sizes.css);
-@import url(1-settings/Font-weigth.css);
-@import url(1-settings/Letter-spacing.css);
-@import url(1-settings/Line-Heights.css);
-@import url(1-settings/Spacing.css);
-@import url(1-settings/Typography.css);
-@import url(1-settings/Width.css);
+@import url(1-settings/font-sizes.css);
+@import url(1-settings/font-weight.css);
+@import url(1-settings/letter-spacing.css);
+@import url(1-settings/line-heights.css);
+@import url(1-settings/spacing.css);
+@import url(1-settings/typography.css);
+@import url(1-settings/width.css);
 
 
 /* 3. Generic */
