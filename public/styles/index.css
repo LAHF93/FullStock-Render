@@ -1,37 +1,39 @@
 /* 1. Settings */
-@import url(/styles/1-settings/border-radius.css);
-@import url(/styles/1-settings/breakpoints.css);
-@import url(/styles/1-settings/colors.css);
-@import url(/styles/1-settings/font-sizes.css);
-@import url(/styles/1-settings/font-weight.css);
-@import url(/styles/1-settings/letter-spacing.css);
-@import url(/styles/1-settings/line-heights.css);
-@import url(/styles/1-settings/spacing.css);
-@import url(/styles/1-settings/typography.css);
-@import url(/styles/1-settings/width.css);
+
+@import url(1-settings/Border-radius.css);
+@import url(1-settings/Breakpoints.css);
+@import url(1-settings/colors.css);
+@import url(1-settings/Font-sizes.css);
+@import url(1-settings/Font-weigth.css);
+@import url(1-settings/Letter-spacing.css);
+@import url(1-settings/Line-Heights.css);
+@import url(1-settings/Spacing.css);
+@import url(1-settings/Typography.css);
+@import url(1-settings/Width.css);
+
 
 /* 3. Generic */
-@import url(/styles/3-generic/reset.css);
-
+@import url(3-generic/reset.css);
+ 
 /* 4. Elements */
-@import url(/styles/4-elements/elements.css);
+@import url(4-elements/elements.css);
 
 /* 5. Objects */
-@import url(/styles/5-objects/objects.css);
+@import url(5-objects/objects.css);
 
 /* 6. Components */
-@import url(/styles/6-components/cart.css);
-@import url(/styles/6-components/categories.css);
-@import url(/styles/6-components/checkout.css);
-@import url(/styles/6-components/features.css);
-@import url(/styles/6-components/footer.css);
-@import url(/styles/6-components/header.css);
-@import url(/styles/6-components/hero.css);
-@import url(/styles/6-components/login.css);
-@import url(/styles/6-components/products.css);
-@import url(/styles/6-components/product.css);
-@import url(/styles/6-components/signup.css);
-@import url(/styles/6-components/thanks.css);
+@import url(6-components/cart.css);
+@import url(6-components/categories.css);
+@import url(6-components/checkout.css);
+@import url(6-components/features.css);
+@import url(6-components/footer.css);
+@import url(6-components/header.css);
+@import url(6-components/hero.css);
+@import url(6-components/login.css);
+@import url(6-components/products.css);
+@import url(6-components/product.css);
+@import url(6-components/signup.css);
+@import url(6-components/thanks.css);
 
 /* 7. Utilities */
-@import url(/styles/7-utilities/utilities.css);
+@import url(7-utilities/utilities.css);
